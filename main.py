@@ -20,6 +20,7 @@ scoreboard = Scoreboard()
 
 
 screen.listen()
+# When you press and hold the corresponding key, it might not work, i think changing onkey to onkeypress might solve that issue (i havent tried it yet)
 screen.onkey(r_paddle.go_up, "Up")
 screen.onkey(r_paddle.go_down, "Down")
 screen.onkey(l_paddle.go_up, "w")
